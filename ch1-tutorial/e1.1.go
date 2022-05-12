@@ -2,4 +2,19 @@
 // to also print os.Args[0], the name of the command that invoked
 // it.
 
-// TODO
+// echo program to modify:
+// func main() {
+//	fmt.Println(strings.Join(os.Args[1:], " "))
+// }
+
+package main
+
+import (
+	"fmt"
+	"os"
+	"strings"
+)
+
+func main() {
+	fmt.Println(strings.Join(os.Args, " "))
+}
